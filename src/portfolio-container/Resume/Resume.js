@@ -19,7 +19,7 @@ const Resume = (props) => {
 
   const ResumeHeading = (props) => {
     return (
-      <div className="resume-heading fade-in screen-container">
+      <div className="resume-heading">
         <div className="resume-main-heading">
           <div className="heading-bullet"></div>
           <span>{props.heading ? props.heading : ""}</span>
@@ -42,40 +42,23 @@ const Resume = (props) => {
   };
 
   const resumeBullets = [
-    { label: "Education", logoSrc: "education.svg" },
     { label: "Work History", logoSrc: "work-history.svg" },
     { label: "Programming Skills", logoSrc: "programming-skills.svg" },
-    { label: "Application Skills", logoSrc: "programming-skills.svg" },
     { label: "Projects", logoSrc: "projects.svg" },
     { label: "Interests", logoSrc: "interests.svg" }
   ];
 
   const programmingSkillsDetails = [
-    { skill: "Python", ratingPercentage: 85 },
-    { skill: "R Languange", ratingPercentage: 65 },
-    { skill: "php", ratingPercentage: 65 },
-    { skill: "Scikit Learn", ratingPercentage: 80 },
+    { skill: "Python", ratingPercentage: 75 },
+    { skill: "Django", ratingPercentage: 65 },
+    { skill: "React JS", ratingPercentage: 80 },
     { skill: "Node JS", ratingPercentage: 65 },
     { skill: "Mongo Db", ratingPercentage: 75 },
     { skill: "SQL Server", ratingPercentage: 90 },
     { skill: "HTML", ratingPercentage: 60 },
     { skill: "CSS", ratingPercentage: 65 },
-    { skill: "Django", ratingPercentage: 65 },
-    { skill: "ArcGIS Model Builder", ratingPercentage: 75 },
-    { skill: "Kafka", ratingPercentage: 65 },
+    { skill: "Bootstrap", ratingPercentage: 80 },
     { skill: "MySQL", ratingPercentage: 75 }
-  ];
-
-  const applicationSkillsDetails = [
-    { skill: "PowerBI", ratingPercentage: 80 },
-    { skill: "Talend Open Studio", ratingPercentage: 85 },
-    { skill: "ArcGIS Platform", ratingPercentage: 85 },
-    { skill: "Grafana", ratingPercentage: 75 },
-    { skill: "Azure Cloud Server", ratingPercentage: 50 },
-    { skill: "E&P - Petrel", ratingPercentage: 70 },
-    { skill: "E&P - Kingdom", ratingPercentage: 85 },
-    { skill: "E&P - Hampson-Russell", ratingPercentage: 85 },
-    { skill: "E&P - Paradigm", ratingPercentage: 75 }
   ];
 
   const projectsDetails = [
@@ -105,35 +88,18 @@ const Resume = (props) => {
   ];
 
   const resumeDetails = [
-    <div className="resume-screen-container" key="education">
-      <ResumeHeading
-        heading={"University of Leeds, United Kingdom"}
-        subHeading={"MASTER of Exploration Geophysics"}
-        fromDate={"2014"}
-        toDate={"2015"}
-      />
-
-      <ResumeHeading
-        heading={"Bandung Institute of Technology, Indonesia"}
-        subHeading={"BACHELOR of Physics"}
-        fromDate={"2008"}
-        toDate={"2013"}
-      />
-    </div>,
-
     /* WORK EXPERIENCE */
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Saka Energi Indonesia"}
-          subHeading={"E&P Data Specialist"}
-          fromDate={"2019"}
+          heading={"FreeLancer"}
+          subHeading={"Full Stack Web Developer"}
+          fromDate={"2021"}
           toDate={"Present"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Currently working as E&P Data Specialist handling E&P technical
-            database and data integration development.
+            Currently working on building website.
           </span>
         </div>
         <div className="experience-description">
@@ -176,23 +142,6 @@ const Resume = (props) => {
     </div>,
 
     /* Application SKILLS */
-    <div
-      className="resume-screen-container application-skills-container"
-      key="application-skills"
-    >
-      {applicationSkillsDetails.map((skill, index) => (
-        <div className="skill-parent" key={index}>
-          <div className="heading-bullet"></div>
-          <span>{skill.skill}</span>
-          <div className="skill-percentage">
-            <div
-              style={{ width: skill.ratingPercentage + "%" }}
-              className="active-percentage-bar"
-            ></div>
-          </div>
-        </div>
-      ))}
-    </div>,
 
     /* PROJECTS */
     <div className="resume-screen-container" key="projects">
@@ -269,7 +218,10 @@ const Resume = (props) => {
   };
 
   return (
-    <div className="resume-container screen-container" id={props.id || ""}>
+    <div
+      className="resume-container screen-container fade-in"
+      id={props.id || ""}
+    >
       <div className="resume-content">
         <ScreenHeading title={"Resume"} subHeading={"My formal Bio Details"} />
         <div className="resume-card">

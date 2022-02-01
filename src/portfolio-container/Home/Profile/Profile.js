@@ -47,19 +47,17 @@ export default function Profile() {
                     1000,
                     "E&P Data Specialist",
                     1000,
-                    "Machine Learning Learner",
+
+                    "Enthusiastic Back-End",
                     1000,
-                    "Enthusiastic Back-End Tech.",
-                    1000,
-                    "Graduated Geophysics",
-                    1000,
+
                     "Database Specialist",
                     1000
                   ]}
                 />
               </h1>
               <span className="profile-role-tagline">
-                Deepening New Horizon with Data and Technology.
+                Bring Sunshine To Your Websites.
               </span>
             </span>
           </div>

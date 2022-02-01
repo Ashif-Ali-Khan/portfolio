@@ -1,6 +1,6 @@
-.main-container {
+.main-content {
   min-height: 100vh;
-  background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2015/01/10/581675/49a85f6a1a0414d782b303e9b38b04b0-700.jpg");
+
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -50,6 +50,8 @@
 
 .back-form .img-back img {
   width: 100%;
+
+  border-radius: 0%;
   opacity: 0.9;
 }
 

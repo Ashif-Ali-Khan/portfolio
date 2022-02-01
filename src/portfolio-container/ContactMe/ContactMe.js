@@ -49,7 +49,7 @@ export default function ContactMe(props) {
   };
 
   return (
-    <div className="main-container screen-container" id={props.id || ""}>
+    <div className="main-content screen-container" id={props.id || ""}>
       <ScreenHeading subHeading={"Lets Keep In Touch"} title={"ContactMe"} />
       <div className="central-form">
         <div className="col">
@@ -80,7 +80,7 @@ export default function ContactMe(props) {
               <p></p>
               <img
                 src={
-                  "https://media.wired.com/photos/599cbdf191885f7b084d37f7/4:3/w_1396,h_1047,c_limit/Robot-Video.jpg"
+                  "https://cdn.pixabay.com/photo/2018/03/22/02/37/email-3249062_960_720.png"
                 }
                 alt="image is missing"
               />

@@ -56,6 +56,7 @@
 .profile-picture-background {
   height: 92%;
   width: 92%;
+
   background-image: url("https://media.wired.com/photos/599cbdf191885f7b084d37f7/4:3/w_1396,h_1047,c_limit/Robot-Video.jpg");
   background-size: cover;
   border-radius: 30%;
